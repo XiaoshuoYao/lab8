@@ -10,10 +10,12 @@ exports.adminView = function(request, response){
 };
 
 exports.addRSVP = function(request, response){
-  var email = request.body.rsvpEmail;
-  console.log(email);
+    var rsvpEmail = request.body.rsvpEmail;
+    console.log(rsvpEmail);
 
-  data.rsvp.push(email);
+    //add to current data
+    data.rsvp.push(rsvpEmail);
 
-  response.send(email);
+    //send back data to the browser
+    response.send(rsvpEmail);
 }

@@ -1,13 +1,16 @@
 function initMap() {
 	// add your code here
-	L.mapquest.key = '	WPijul9WmoiDQehoEfhAZFmEw2upkGDG';
+    L.mapquest.key = "WPijul9WmoiDQehoEfhAZFmEw2upkGDG";
 
-	var map = L.mapquest.map('map', {
-		center: [32.88, -117.236],
-		layers: L.mapquest.tileLayer('map'),
-		zoom: 12,
-		zoomControl: false
-	});
+    //'map' refers to a <div> element witht he ID map
+    var map = L.mapquest.map('map', {
+        center: [32.8811705, -117.2375803],
+        layers: L.mapquest.tileLayer('map'),
+        zoom: 12,
+        zoomControl: false
+    });
 
-	L.marker([32.88, -117.236]).addTo(map);
+    //add a marker to the map
+    L.marker([32.8811705, -117.2375803]).addTo(map);
+
 }
